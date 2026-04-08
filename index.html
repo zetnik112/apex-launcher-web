@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Pro Launcher — Лучший лаунчер для Minecraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apex: { dark: '#1a1a1a', card: '#212121', blue: '#3a7ebf', hover: '#1f538d', green: '#2fa572' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #121212; color: #EBEBEC; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .glow { box-shadow: 0 0 40px rgba(58, 126, 191, 0.4); }
+    </style>
+</head>
+<body class="antialiased selection:bg-apex-blue selection:text-white">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative z-10">
+        <div class="text-2xl font-bold tracking-wider">
+            APEX <span class="text-apex-blue">CORE</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="#features" class="hover:text-white transition">Возможности</a>
+            <a href="#about" class="hover:text-white transition">О лаунчере</a>
+            <a href="#support" class="hover:text-white transition">Поддержка</a>
+        </div>
+        <a href="#download" class="bg-apex-blue hover:bg-apex-hover px-5 py-2 rounded-lg font-bold transition duration-300">Скачать</a>
+    </nav>
+
+    <header class="relative container mx-auto px-6 pt-20 pb-32 text-center md:pt-32 md:pb-40">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-apex-blue rounded-full mix-blend-screen filter blur-[120px] opacity-30 z-0"></div>
+        
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Твой Minecraft.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Без компромиссов.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+                Apex Pro Launcher 3.0 — это быстрый, современный и безопасный клиент для игры на любых серверах. Встроенные моды, лицензия Microsoft и Discord интеграция.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4" id="download">
+                <a href="#" class="bg-apex-blue hover:bg-apex-hover text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center transition duration-300 glow">
+                    <i class="fa-brands fa-windows text-2xl mr-3"></i> Скачать для Windows
+                </a>
+                <a href="#" class="bg-apex-card hover:bg-gray-800 border border-gray-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center transition duration-300">
+                    <i class="fa-brands fa-github text-2xl mr-3"></i> Исходный код
+                </a>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">Версия 3.0.0 | Размер: 45 МБ | Требуется Java 17+</p>
+        </div>
+    </header>
+
+    <section id="features" class="bg-apex-dark py-20 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Почему именно Apex Pro?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-apex-blue transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-cubes text-2xl text-apex-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Менеджер Модов</h3>
+                    <p class="text-gray-400">Устанавливай Forge и Fabric в один клик. Встроенная панель управления модами позволяет включать и отключать их прямо в лаунчере.</p>
+                </div>
+
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-green-500 transition duration-300 group">
+                    <div class="w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-brands fa-microsoft text-2xl text-apex-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Официальная Лицензия</h3>
+                    <p class="text-gray-400">Безопасный вход через Microsoft Xbox Live (OAuth 2.0). Лаунчер автоматически подтянет твой никнейм и отобразит голову скина.</p>
+                </div>
+
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-purple-500 transition duration-300 group">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-brands fa-discord text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Discord Rich Presence</h3>
+                    <p class="text-gray-400">Покажи всем, во что ты играешь! Лаунчер автоматически транслирует статус запуска игры, версию и загрузчик в твой профиль Discord.</p>
+                </div>
+
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-orange-500 transition duration-300 group">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-clock text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Трекер Времени</h3>
+                    <p class="text-gray-400">Отслеживай свою активность. Встроенная статистика подсчитывает с точностью до секунды, сколько времени ты провел в своих кубических мирах.</p>
+                </div>
+
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-apex-blue transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-palette text-2xl text-apex-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Кастомизация</h3>
+                    <p class="text-gray-400">Твой лаунчер — твои правила. Меняй цвета акцентов, создавай неограниченное количество профилей с разными сборками и настройками ОЗУ.</p>
+                </div>
+
+                <div class="bg-apex-card p-8 rounded-2xl border border-gray-800 hover:border-red-500 transition duration-300 group">
+                    <div class="w-14 h-14 bg-red-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bolt text-2xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Умная загрузка Java</h3>
+                    <p class="text-gray-400">Забудь про ошибку "Не та версия Java". Лаунчер сам анализирует версию игры и скачивает правильный JRE прямо в фоновом режиме.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-apex-card py-10 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <p>© 2026 Apex Core Team. Не связано с Mojang AB.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
