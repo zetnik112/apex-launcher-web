@@ -62,6 +62,7 @@
 🌐 Веб-сайт
 Официальная страница проекта (Landing Page) доступна по ссылке:
 Сайт Apex Pro Launcher
+
 ⚠️ Отказ от ответственности
 Этот проект создан в образовательных целях и не связан с Mojang AB или Microsoft Corporation. Minecraft является торговой маркой Mojang Synergies AB.
 
