@@ -59,6 +59,7 @@
    ```Bash
    python -m PyInstaller --noconfirm --noconsole --onedir --name "ApexProLauncher" --icon "assets\icon.ico" --add-data "assets;assets" main.py
 3. Готовый лаунчер появится в папке dist/ApexProLauncher.
+
 🌐 Веб-сайт
 Официальная страница проекта (Landing Page) доступна по ссылке:
 Сайт Apex Pro Launcher
